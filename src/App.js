@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
-      <ItemListContainer greeting={"Entregable"}/>
+      <ItemListContainer greeting={"Visualizacion de inicio"}/>
     </div>
   );
 }
