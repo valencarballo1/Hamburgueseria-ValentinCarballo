@@ -1,4 +1,7 @@
 import image from "./logo.png";
+import CartWidget from "./CartWidget";
+
+
 const NavBar = () =>{
     return <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
     <div className="container-fluid">
@@ -18,11 +21,7 @@ const NavBar = () =>{
                 <a className="nav-link text-light" aria-current="page">Sobre nosotros</a>
               </li>
             </button>
-            <button type="button" className="btn btn-outline-secondary">
-              <li className="nav-item">
-                <a className="nav-link text-light" aria-current="page">Hace tu pedido!</a>
-              </li>
-            </button>
+              <CartWidget/>
         </ul>
       </div>
     </div>
