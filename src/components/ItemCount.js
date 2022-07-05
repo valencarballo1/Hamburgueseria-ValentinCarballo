@@ -8,15 +8,15 @@ const ItemCount = ({ stock, initial, onAdd }) => {
   };
 
   const descrementar = () => {
-    setCount((valAnt) => (valAnt > 0 ? count - 1 : count)(count - 1));
+    setCount((valAnt) => (valAnt > 0 ? count - 1 : count));
   };
 
   return (
     <div>
       <h3>{count}</h3>
-      <button onClick={descrementar}> - </button>
-      <button onClick={incrementar}> + </button>
-      <button onClick ={() => {
+      <button type="button" className="btn btn-secondary" onClick={descrementar}> - </button>
+      <button type="button" className="btn btn-secondary" onClick={incrementar}> + </button>
+      <button type="button" className="btn btn-secondary" onClick ={() => {
         if (count <= stock){
           onAdd(count);
         } else {
